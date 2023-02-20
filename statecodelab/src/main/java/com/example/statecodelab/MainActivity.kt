@@ -189,7 +189,7 @@ fun calculateTip(
 ): String {
     amount?.let {
         val tip = tipPercent / 100 * amount
-        return NumberFormat.getInstance().format(tip)
+        return tip.toString()
     }
     return ""
 }
